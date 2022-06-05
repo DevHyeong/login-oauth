@@ -3,7 +3,7 @@ import axios from 'axios';
 import AuthSuccess from './AuthSuccess';
 import {  useSearchParams, Navigate  } from 'react-router-dom';
 
-const CLIENT_ID = process.env.REACT_APP_KAKAO_CLIENT_ID;
+const CLIENT_ID = process.env.KAKAO_CLIENT_ID;
 const REDIRECT_URI = "http://localhost:3000/auth/kakao/callback";
 
 export default () =>{

@@ -4,9 +4,9 @@ import {  useSearchParams, Navigate  } from 'react-router-dom';
 
 
 
-const CLIENT_ID = process.env.REACT_APP_NAVER_CLIENT_ID;
+const CLIENT_ID = process.env.NAVER_CLIENT_ID;
 const REDIRECT_URI = "http://localhost:3000/auth/naver/callback";
-const CLIENT_SECRET = process.env.REACT_APP_NAVER_CLIENT_SECRET;
+const CLIENT_SECRET = process.env.NAVER_CLIENT_SECRET;
 
 export default () =>{
 

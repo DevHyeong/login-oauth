@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CLIENT_ID = process.env.REACT_APP_NAVER_CLIENT_ID;
+const CLIENT_ID = process.env.NAVER_CLIENT_ID;
 const REDIRECT_URI = "http://localhost:3000/auth/naver/callback";
 const oauthUrl = `https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}`;
 

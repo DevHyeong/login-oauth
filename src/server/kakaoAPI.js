@@ -1,7 +1,9 @@
 
 import fetch from 'node-fetch';
+import dotenv from 'dotenv';
 
-const REST_API_KEY = "465f2d63b7b4475da85679ba4b7cd463";
+dotenv.config();
+const REST_API_KEY = process.env.KAKAO_CLIENT_ID;
 const REDIRECT_URI = "http://localhost:3000/auth/kakao/callback";
 
 

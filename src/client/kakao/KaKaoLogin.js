@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const CLIENT_ID = process.env.REACT_APP_KAKAO_CLIENT_ID;
+const CLIENT_ID = process.env.KAKAO_CLIENT_ID;
 const REDIRECT_URI = "http://localhost:3000/auth/kakao/callback";
 const oauthUrl = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}`;
 

@@ -1,9 +1,11 @@
 
 import fetch from 'node-fetch';
+import dotenv from 'dotenv';
 
-const CLIENT_ID = "60veFPmflfjcSeHyDEBB";
+dotenv.config();
+const CLIENT_ID = process.env.NAVER_CLIENT_ID;
 const REDIRECT_URI = "http://localhost:8082/auth/kakao/callback";
-const CLIENT_SECRET = "uidONHIR7m";
+const CLIENT_SECRET = process.env.NAVER_CLIENT_SECRET;
 
 
 let options = {
